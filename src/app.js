@@ -13,6 +13,7 @@ Vue.component('f-input', input)
 Vue.component('f-row', row)
 Vue.component('f-col', col)
 
+
 new Vue({
     el:'#app',
     data:{
@@ -27,3 +28,4 @@ new Vue({
         }
     }
 })
+
