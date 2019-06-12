@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+    <title>farmer-UI</title>
+     <style>
+         *{margin:0;padding:0; box-sizing: border-box}
+         html {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        #app{
+            margin:20px;
+        }
+        body{
+            font-size:var(--font-size)
+        }
+
+     </style>
+</head>
+<body>
+	<div id="app">
+                 <f-input>test</f-input>
+        <f-input value="测试"></f-input>
+        <f-input readonly value="只读"></f-input>
+        <f-input disabled value="不可点击"></f-input>
+        <f-input error="有问题哦"></f-input>
+        <p>设置gutter20</p>
+        <f-row gutter="20">
+            <f-col span="6"><div class="demo-col">1</div></f-col>
+            <f-col span="6"><div class="demo-col">2</div></f-col>
+            <f-col span="6"><div class="demo-col">3</div></f-col>
+            <f-col span="6"><div class="demo-col">4</div></f-col>
+        </f-row>
+
+        <p>设置span</p>
+        <f-row>
+            <f-col span="5"><div class="demo-col">span是5</div></f-col>
+            <f-col span="8"><div class="demo-col">span是8</div></f-col>
+        </f-row>
+
+        <p>设置offset</p>
+        <f-row>
+            <f-col span="6"><div class="demo-col">1</div></f-col>
+            <f-col span="6"><div class="demo-col">2</div></f-col>
+            <f-col span="6" offset="6"><div class="demo-col">offset是6</div></f-col>
+        </f-row>
+        
+    </div>
+    <script src="./src/app.js"></script>
+    <script src="//at.alicdn.com/t/font_1137688_98ekxiulgc.js"></script>
+</body>
+</html>
