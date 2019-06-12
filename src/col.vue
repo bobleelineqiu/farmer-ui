@@ -1,8 +1,8 @@
 <template>
     <div class="f-col" :class="[span && `f-col-${span}`,
-     offset && `offset-${offset}`,
-     pull && `pull-${pull}`,
-     push && `push-${push}`
+     offset && `f-col-offset-${offset}`,
+     pull && `f-col-pull-${pull}`,
+     push && `f-col-push-${push}`
      ] " :style="style">
         <slot></slot>
     </div>
@@ -54,14 +54,14 @@ export default {
   .f-col-#{$i} {
     width: 1 / 24 * $i * 100%;
   }
-  .offset-#{$i} {
+  .f-col-offset-#{$i} {
     margin-left:1 / 24 * $i * 100%;
   }
-  .pull-#{$i} {
+  .f-col-pull-#{$i} {
     position: relative;
     right: 1 / 24 * $i * 100%;
   }
-  .push-#{$i} {
+  .f-col-push-#{$i} {
     position: relative;
     left: 1 / 24 * $i * 100%;
   }
