@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+    <title>farmer-UI</title>
+     <style>
+         *{margin:0;padding:0; box-sizing: border-box}
+         html {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        #app{
+            margin:20px;
+        }
+        body{
+            font-size:var(--font-size)
+        }
+
+     </style>
+</head>
+<body>
+	<div id="app">
+                 <s-input>test</s-input>
+        <s-input value="测试"></s-input>
+        <s-input readonly value="只读"></s-input>
+        <s-input disabled value="不可点击"></s-input>
+        <s-input error="有问题哦"></s-input>
+        <p>设置gutter20</p>
+        <s-row gutter="20">
+            <s-col span="6"><div class="demo-col">1</div></s-col>
+            <s-col span="6"><div class="demo-col">2</div></s-col>
+            <s-col span="6"><div class="demo-col">3</div></s-col>
+            <s-col span="6"><div class="demo-col">4</div></s-col>
+        </s-row>
+
+        <p>设置span</p>
+        <s-row>
+            <s-col span="5"><div class="demo-col">span是5</div></s-col>
+            <s-col span="8"><div class="demo-col">span是8</div></s-col>
+        </s-row>
+
+        <p>设置offset</p>
+        <s-row>
+            <s-col span="6"><div class="demo-col">1</div></s-col>
+            <s-col span="6"><div class="demo-col">2</div></s-col>
+            <s-col span="6" offset="6"><div class="demo-col">offset是6</div></s-col>
+        </s-row>
+        <!-- <s-button icon="setting" icon-position="left">按钮</s-button>
+        <s-button icon="setting" icon-position="right">按钮</s-button>
+        <s-button :loading=true icon="download">按钮</s-button>
+        <s-button :loading=loading1 icon-position="right" @click="loading1 = false" icon="download">按钮</s-button>
+        <s-button-group>
+            <s-button icon="left" icon-position="left">前一页</s-button>
+            <s-button icon-position="left">中间</s-button>
+            <s-button icon="right" icon-position="right">后一页</s-button>
+        </s-button-group> -->
+    
+        
+    </div>
+    <script src="./src/app.js"></script>
+    <script src="//at.alicdn.com/t/font_1137688_98ekxiulgc.js"></script>
+</body>
+</html>
